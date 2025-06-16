@@ -1,0 +1,750 @@
+/* ===========================
+    All Common Design Start
+=============================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main_font: "Roboto", sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto ;
+}
+/* ===========================
+    All Common Design end
+=============================== */
+
+
+
+
+/* ===========================
+    Navbar Design Start
+=============================== */
+
+nav{
+    padding: 20px 0;
+}
+
+nav .container .nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav_container .menu ul{
+    display: flex;
+    gap: 50px;
+}
+
+.nav_container .menu ul li{
+    list-style: none;
+}
+.nav_container .menu ul li a{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: rgb(47, 43, 43);
+    transition: all linear 0.3s;
+    cursor: pointer;
+    
+}
+
+.nav_container .menu ul li a:hover{
+    color: rgb(236, 49, 124);
+}
+.nav_container .menu ul li:first-child a{
+    color: rgb(236, 49, 124);
+}
+
+nav .container .nav_container button {
+    padding: 10px 20px;
+    background-color: rgb(236, 49, 124);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+
+
+nav .container .nav_container button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(236, 49, 124);
+    border: 1px solid rgb(236, 49, 124);
+}
+
+/* ===========================
+    Navbar Design End
+=============================== */
+
+
+
+
+/* ===========================
+    Banner Design Start
+=============================== */
+#banner{
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.banner_container {
+    display: flex;
+}
+
+.banner_container .hero_image{
+    max-width: 600px;
+}
+
+.banner_container .hero_image img{
+    width: 100%;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+
+.banner_container .first_element h3 span{
+    padding: 0 5px;
+}
+.banner_container .first_element h3 span i{
+    color: rgb(236, 49, 124);
+}
+
+.banner_container .main_title h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: #00205b;
+    max-width: 450px;
+}
+
+.banner_container .second_element p{
+    font-size: 16px;
+    color: #021435a9;
+    padding: 20px 0;
+}
+
+.banner_container .btn button{
+    padding: 20px 30px;
+    background-color: rgb(236, 49, 124);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+.banner_container .btn button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(236, 49, 124);
+    border: 1px solid rgb(236, 49, 124);
+}
+
+.banner_container .times{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+    
+}
+
+.banner_container .times .times_contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner_container .times .times_contact .icons{
+    background-color: #00205b;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_container .times .times_contact .icons i{
+    color: white;
+    
+}
+/* ===========================
+    Banner Design Start
+=============================== */
+
+
+
+
+/* ===========================
+    Section_two Design Start
+=============================== */
+
+#section_two {
+    background: #00205b;
+    padding: 60px 0;
+    color: #fff;
+    margin-top: -20px;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.section_two_container {
+    text-align: center;
+}
+
+.section_two_para h4 {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.section_two_para h4 span{
+    color: #ec317c;
+}
+
+.section_two_para h1 {
+    font-size: 36px;
+    font-weight: 700;
+    max-width: 700px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto 50px;
+}
+
+.section_two_icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.icon {
+    background-color: #2c477e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon i {
+    color: white;
+    font-size: 22px;
+}
+
+.icon-text h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.icon-text p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ===========================
+    Section_two Design End
+=============================== */
+
+
+
+
+/* ===========================
+    About Design Start
+=============================== */
+
+#about{
+    padding: 60px 0;
+}
+
+.section_three_container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    
+}
+
+.section_three_container .left_image{
+    width: 500px;
+    
+}
+
+.left_image .aboutus_01{
+    width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.left_image .aboutus_01 img{
+    width: 100%;
+}
+
+.left_image .aboutus_04{
+    width: 300px;
+    border: 10px solid #ffff;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(60%, -40%);
+}
+
+
+.left_image .aboutus_04 img{
+    width: 100%;
+}
+
+.right_text{
+    width: 400px;
+}
+
+.right_text h4{
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    color: rgba(39, 38, 38, 0.837);
+    margin-bottom: 15px;
+}
+
+.right_text h1{
+    font-size: 30px;
+    color: #00205b;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.right_text p{
+    font-size: 14px;
+    color: rgba(58, 56, 56, 0.837);
+    margin-bottom: 40px;
+}
+
+.right_text .icons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 300px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.right_text .capabilities p{
+    color: #2c477e;
+    margin-bottom: 10px;
+}
+
+.right_text .capabilities p i{
+    padding: 0 5px;
+}
+
+.right_text button{
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(236, 49, 124);
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.right_text button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(236, 49, 124);
+    border: 1px solid rgb(236, 49, 124);
+}
+
+/* ===========================
+    About Design Start
+=============================== */
+
+
+/* ===========================
+    Services Design Start
+=============================== */
+
+#services{
+    background: #e6f1f9a3;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.services_container{
+    text-align: center;
+}
+.services_container h4{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.services_container h2{
+    max-width: 500px;
+    font-size: 30px;
+    margin: 0 auto;
+    color: #00205b;
+    letter-spacing: 1px;
+}
+
+.services_container .our_services{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 30px;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.services02{
+    transform: translateY(60px);
+    padding-bottom: 10px;
+    
+}
+
+.services01, .services02, .services03{
+    border: 1px solid #00205b53;
+    border-radius: 15px;
+    max-width: 250px;
+    padding: 10px;
+    background: #fff;
+    transition: all linear 0.3s;
+}
+
+.our_services .services_image{
+    max-width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: -40px;
+}
+
+
+.our_services .services_image img{
+    width: 100%;
+}
+
+
+.our_services .services_text h3{
+    color: #00205b;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.our_services .services_text p{
+    margin: 15px 0;
+    text-align: center;
+}
+
+.our_services .services_text button{
+    border-style: none;
+    background: transparent;
+    color: #00205b;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.services01:hover, .services02:hover, .services03:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px 5px #00205b70;
+}
+
+.services_container button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ec317c;
+    color: #fff;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.services_container button:hover{
+    background: #ffff;
+    border: 1px solid #ec317c;
+    color: #ec317c;
+    
+}
+
+/* ===========================
+    Services Design End
+=============================== */
+
+
+
+/* ===========================
+    Projects Design start
+=============================== */
+#projects{
+    margin: 40px 0;
+}
+
+.projects_text{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects_text h2{
+    font-size: 30px;
+    color: #00205b;
+    max-width: 350px;
+}
+
+
+.projects_text button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ec317c;
+    color: #fff;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    
+}
+
+.projects_text button:hover{
+    background: #ffff;
+    border: 1px solid #ec317c;
+    color: #ec317c;
+}
+
+.projects_image{
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    grid-template-areas: "box-1 box-1 box-2 box-2 box-3" "box-4 box-4 box-4 box-5 box-5";
+    justify-content: space-between;
+    padding-top: 15px;
+    
+}
+.projects_image .image_box{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.projects_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ===========================
+    Projects Design end
+=============================== */
+
+
+
+/* ===========================
+    Satisfaction Design start
+=============================== */
+
+#satisfaction{
+    background:#e6f1f9a3 ;
+    padding: 40px 0;
+}
+
+.satisfaction_container h3{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.satisfaction_container h2{
+    font-size: 30px;
+    color: #00205b;
+    font-weight: 700;
+    text-align: center;
+    max-width: 330px;
+    margin: 15px auto;
+}
+
+.satisfaction_customer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.satisfaction_customer div{
+    max-width: 250px;
+    border: 1px solid #00205b4e;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.satisfaction_customer div i{
+    margin: 10px 0;
+    color: #ec317c;
+}
+
+.satisfaction_customer div p{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.satisfaction_container div .team{
+    display: flex;
+    border: none;
+    gap: 5px;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.satisfaction_container div .team img{
+    height: 50px;
+    width: 50px;
+}
+
+.satisfaction_container div .team h3{
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: #00205b;
+}
+/* ===========================
+    Satisfaction Design end
+=============================== */
+
+
+
+/* ===========================
+    Footer Design start
+=============================== */
+
+footer {
+    height: 360px;
+    background: linear-gradient(#01091a7c, #000f2a89), url("./images/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px 0;
+}
+
+.footer_container .footer_icon{
+    display: flex;
+    border: 2px solid #fff;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.footer_container h2{
+    color: #fff;
+    letter-spacing: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.footer_container button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ec317c;
+    color: #fff;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    display: block;
+    margin: 30px auto;
+    
+    
+}
+
+.footer_container button:hover{
+    transform: scale(1.1);
+    background: transparent;
+    border: 2px solid #ef1b70;
+    color: #fd0c6d;
+}
+/* ===========================
+    Footer Design end
+=============================== */
+
+
+
+/* ===========================
+    last_element Design start
+=============================== */
+
+#last_element{
+    background-color: #00205b;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.last_element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last_element .logo {
+    width: 80px;
+}
+
+.last_element .logo img{
+    width: 100%;
+}
+
+.last_element .text{
+    color: #fff;
+    font-size: 14px;
+}
+
+.last_element .last_icons{
+    
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+/* ===========================
+    last_element Design end
+=============================== */
